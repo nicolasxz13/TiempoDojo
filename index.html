@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <title>Weather Forecost</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1>DojoWeather</h1>
+        </div>
+        <div>
+            <a href="#" onclick="loadreport(this)">Burbank</a>
+            <a href="#" onclick="loadreport(this)">Chicago</a>
+            <a href="#" onclick="loadreport(this)">Dallas</a>
+        </div>
+    </nav>
+    <header>
+        <h2>San Jose</h2>
+        <div>
+            <label>
+                show temperature in
+            </label>
+            <select onchange="changetemp(this)">
+                <option value="C" selected>°C</option>
+                <option value="F">°F</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div class="blockday">
+            <p class="titleday">Today</p>
+            <img src="./assets/some_rain.png" alt="some rain">
+            <p class="descriptionday">some rain</p>
+            <p>
+                <span class="max">75°</span>
+                <span class="min">65°</span>
+            </p>
+        </div>
+        <div class="blockday">
+            <p class="titleday">Tomorrow</p>
+            <img src="./assets/some_sun.png" alt="some sun">
+            <p class="descriptionday">some sun</p>
+            <p>
+                <span class="max">80°</span>
+                <span class="min">66°</span>
+            </p>
+        </div>
+        <div class="blockday">
+            <p class="titleday">Friday</p>
+            <img src="./assets/some_clouds.png" alt="some clouds">
+            <p class="descriptionday">some clouds</p>
+            <p>
+                <span class="max">69°</span>
+                <span class="min">61°</span>
+            </p>
+        </div>
+        <div class="blockday">
+            <p class="titleday">Saturday</p>
+            <img src="./assets/some_sun.png" alt="some sun">
+            <p class="descriptionday">some sun</p>
+            <p>
+                <span class="max">26°</span>
+                <span class="min">21°</span>
+            </p>
+        </div>
+    </main>
+
+    <div id="cookiebar">
+        <div>
+            <img src="./assets/cookie.png" alt="cookie icon">
+        </div>
+        <div>
+            <p class="cookiehead">
+                Stop! Cookie Time
+            </p>
+            <p class="cookiedescription">
+                We use cookies (sadly not the edible ones) to personalize
+                content add ads, to provide social media features and to
+                analyse our traffic. <a href="#">Read more...</a>
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn" onclick="aceptcookie()">I Accept</button>
+        </div>
+    </div>
+</body>
+</html>
